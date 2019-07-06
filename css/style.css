@@ -33,7 +33,7 @@
   padding-left: 1rem;
 }
 
-.nav-link.active {
+.main-nav .active {
   background-color: gray;
   color: white!important;
   border-radius: 5px;
