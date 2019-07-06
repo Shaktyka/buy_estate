@@ -24,6 +24,15 @@
 
 /* НАВИГАЦИЯ */
 
+.user-nav .nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav {
+  padding-left: 1rem;
+}
+
 .nav-link.active {
   background-color: gray;
   color: white!important;
@@ -48,7 +57,7 @@
   max-width: 500px;
   min-width: 500px;
   min-height: 500px;
-  margin-left: 16px;
+  margin-left: 1rem;
   background-color: white;
   border-radius: 5px;
 }
