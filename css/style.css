@@ -24,6 +24,15 @@
 
 /* НАВИГАЦИЯ */
 
+.main-header {
+  /*background-color: #009999;*/
+  background-color: brown;
+}
+
+.main-nav__logo {
+  color: white;
+}
+
 .user-nav .nav-item {
   display: flex;
   align-items: center;
@@ -66,4 +75,9 @@
 
 .form-group label {
   margin-bottom: 0.2rem;
+}
+
+.submit-btn {
+  background-color: #006363;
+  color: white;
 }
