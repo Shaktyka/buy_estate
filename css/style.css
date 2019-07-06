@@ -142,3 +142,29 @@
 footer.page-footer .footer-copyright {
   background-color: brown;
 }
+
+.builder {
+  outline: 1px solid gray;
+}
+
+.builder__wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.builder__img-wrap {
+  min-width: 13%;
+  max-width: 13%;
+  margin-right: 2rem;
+}
+
+.builder__desc {
+  flex-grow: 1;
+}
+
+.builder__other {
+  min-width: 30%;
+}
