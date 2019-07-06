@@ -21,8 +21,8 @@
         <div class="container">
             <!-- Navbar brand -->
             <a class="navbar-brand main-header__logo" href="index.html">
-              <i class="fas fa-city mr-1"></i>
-              Надёжный застройщик
+                <i class="fas fa-city mr-1"></i>
+                Надёжный застройщик
             </a>
             <!-- Collapse button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,12 +30,12 @@
             </button>
             <!-- Collapsible content -->
             <div class="collapse navbar-collapse" id="basicExampleNav">
-              <a href="#"></a>
+                <a href="#"></a>
                 <ul class="navbar-nav ml-auto user-nav">
                     <li class="nav-item user-city">
-                      <a class="white-text" href="#" title="Изменить">
-                        <b><i class="fas fa-search-location mr-1"></i> Ваш город: <span class="user-city__link">Уфа</span></b>
-                      </a>
+                        <a class="white-text" href="#" title="Изменить">
+                            <b><i class="fas fa-search-location mr-1"></i> Ваш город: <span class="user-city__link">Уфа</span></b>
+                        </a>
                     </li>
                     <li class="nav-item ml-4">
                         <a class="white-text" href="#" title="Войти в личный кабинет">
@@ -73,76 +73,108 @@
                 <section class="map__block">
                     <!-- Блок для карты -->
                     <div class="container">
-                        <div class="row">
-                            <div class="map__filter">
+                        <div class="row justify-content-between">
+                            <!-- Блок с набором фильтров -->
+                            <section class="map__filter">
                                 <form class="text-center py-4 px-5">
                                     <h3 class="h4 mb-3">Параметры фильтра</h3>
-
                                     <div class="form-group mb-2">
-                                      <label for="builder">Застройщик:</label>
-                                      <select id="builder" class="browser-default custom-select">
-                                        <option value="0" selected>Не выбрано</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                      </select>
+                                        <label for="builder">Застройщик:</label>
+                                        <select id="builder" class="browser-default custom-select">
+                                            <option value="0" selected>Не выбрано</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
                                     </div>
-
                                     <div class="form-group mb-2">
-                                      <label for="room-amount">Количество комнат:</label>
-                                      <select id="room-amount" class="browser-default custom-select">
-                                        <option value="0" selected>Не выбрано</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                      </select>
+                                        <label for="room-amount">Количество комнат:</label>
+                                        <select id="room-amount" class="browser-default custom-select">
+                                            <option value="0" selected>Не выбрано</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
                                     </div>
-
                                     <div class="form-group mb-2">
-                                      <p class="mb-1">Цена:</p>
-                                      <div class="d-flex justify-content-between">
-                                        <input type="text" id="price-min" class="form-control mb-2 mr-2" placeholder="от">
-                                        <input type="text" id="price-max" class="form-control mb-2" placeholder="до">
-                                      </div>
+                                        <p class="mb-1">Цена:</p>
+                                        <div class="d-flex justify-content-between">
+                                            <input type="text" id="price-min" class="form-control mb-2 mr-2" placeholder="от">
+                                            <input type="text" id="price-max" class="form-control mb-2" placeholder="до">
+                                        </div>
                                     </div>
-
                                     <div class="form-group mb-2">
-                                      <p class="mb-1">Метраж:</p>
-                                      <div class="d-flex justify-content-between">
-                                        <input type="text" id="meters-min" class="form-control mb-2 mr-2" placeholder="от">
-                                        <input type="text" id="meters-max" class="form-control mb-2" placeholder="до">
-                                      </div>
+                                        <p class="mb-1">Метраж:</p>
+                                        <div class="d-flex justify-content-between">
+                                            <input type="text" id="meters-min" class="form-control mb-2 mr-2" placeholder="от">
+                                            <input type="text" id="meters-max" class="form-control mb-2" placeholder="до">
+                                        </div>
                                     </div>
-
                                     <div class="form-group mb-2">
-                                      <p class="mb-1">Этажи:</p>
-                                      <div class="d-flex justify-content-between">
-                                        <input type="text" id="floors-min" class="form-control mb-2 mr-2" placeholder="от">
-                                        <input type="text" id="floors-max" class="form-control mb-2" placeholder="до">
-                                      </div>
+                                        <p class="mb-1">Этажи:</p>
+                                        <div class="d-flex justify-content-between">
+                                            <input type="text" id="floors-min" class="form-control mb-2 mr-2" placeholder="от">
+                                            <input type="text" id="floors-max" class="form-control mb-2" placeholder="до">
+                                        </div>
                                     </div>
-
                                     <div class="form-group mb-2">
-                                      <label for="building-type">Тип здания:</label>
-                                      <select id="building-type" class="browser-default custom-select">
-                                        <option value="0" selected>Не выбрано</option>
-                                        <option value="1">Кирпичный</option>
-                                        <option value="2">Панельный</option>
-                                        <option value="3">Блочный</option>
-                                        <option value="4">Монолитный</option>
-                                        <option value="3">Деревянный</option>
-                                      </select>
+                                        <label for="building-type">Тип здания:</label>
+                                        <select id="building-type" class="browser-default custom-select">
+                                            <option value="0" selected>Не выбрано</option>
+                                            <option value="1">Кирпичный</option>
+                                            <option value="2">Панельный</option>
+                                            <option value="3">Блочный</option>
+                                            <option value="4">Монолитный</option>
+                                            <option value="3">Деревянный</option>
+                                        </select>
                                     </div>
-
-                                    <button class="btn btn-block my-4 text-white submit-btn" type="submit">Найти</button>
+                                    <button class="btn btn-block my-4 text-white submit-btn" type="submit" id="filter-submit">Найти</button>
                                 </form>
-                            </div>
+                            </section>
+                            <!-- Сбда вставится карточка с описанием объекта -->
                         </div>
                     </div>
                 </section>
             </div>
         </div>
     </div>
+    <!-- Карточка с описанием выбранного объекта на карте -->
+    <template>
+        <article class="map__card popup py-4 px-4">
+            <div class="popup__wrap d-flex flex-column">
+                <button type="button" class="popup__close">Закрыть</button>
+                <div class="d-flex align-items-end mb-1">
+                    <img class="mr-1" src="https://via.placeholder.com/30" alt="Лого застройщика">
+                    <span>Третий трест</span>
+                </div>
+                <h4 class="h4 mb-3">"Smart Plaza"</h4>
+                <div class="d-flex align-items-end mb-2">
+                    <b class="mr-1">Адрес:</b>
+                    <span>Заводская 15/3</span>
+                </div>
+                <div class="d-flex align-items-end mb-2">
+                    <b class="mr-1">Цена:</b>
+                    <span>5 000 000</span>
+                </div>
+                <div class="d-flex align-items-end mb-2">
+                    <b class="mr-1">Этажей:</b>
+                    <span>30</span>
+                </div>
+                <div class="d-flex align-items-end mb-2">
+                    <b class="mr-1">Тип:</b>
+                    <span>панельный</span>
+                </div>
+                <div class="mb-2">
+                    <b class="d-block">Описание:</b>
+                    <span>Smart Plaza — это новый жилой комплекс интеллект-класса, где технологии будущего уже рядом с вами.</span>
+                </div>
+                <div class="d-flex justify-content-between mt-auto">
+                    <button type="button" class="btn btn-secondary" id="feedback-btn">Отзывы</button>
+                    <button type="button" class="btn btn-success" id="buy-btn">Связаться</button>
+                </div>
+            </div>
+        </article>
+    </template>
     <!-- SCRIPTS -->
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <!-- Bootstrap tooltips -->
@@ -152,7 +184,6 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <script>
-
     </script>
 </body>
 

@@ -1,6 +1,6 @@
 /* COMMON */
 
-*, ::before, ::after {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
@@ -89,4 +89,42 @@
 .submit-btn {
   background-color: #006363;
   color: white;
+}
+
+/* POPUP */
+
+.popup {
+  position: relative;
+}
+
+.popup__wrap {
+  height: 100%;
+}
+
+.popup__close {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    padding: 0;
+    font-size: 0;
+    border: 0;
+    background: none;
+}
+
+.popup__close::after {
+  font-size: 50px;
+  line-height: 40px;
+  display: block;
+  content: "×";
+  color: #000000;
+}
+
+/* MAP CARD */
+
+.map__card {
+  z-index: 2;
+  width: 350px;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: #ffffff;
 }
