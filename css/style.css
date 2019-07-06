@@ -25,12 +25,21 @@
 /* НАВИГАЦИЯ */
 
 .main-header {
-  /*background-color: #009999;*/
   background-color: brown;
 }
 
-.main-nav__logo {
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.main-header__logo {
   color: white;
+}
+
+.main-header__logo:hover,
+.main-header__logo:focus {
+  color: white;
+  opacity: 0.8;
 }
 
 .user-nav .nav-item {
