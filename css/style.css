@@ -65,6 +65,8 @@
   align-items: center;
   background-color: gray;
   min-height: 750px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .map__wrap {
@@ -127,4 +129,16 @@
   font-size: 1rem;
   border-radius: 5px;
   background-color: #ffffff;
+}
+
+/* FOOTER SOCIALS */
+
+.page-footer {
+  background-color: #a52a2ac9;
+}
+
+/* FOOTER COPYRIGHT */
+
+footer.page-footer .footer-copyright {
+  background-color: brown;
 }
