@@ -148,8 +148,9 @@ footer.page-footer .footer-copyright {
 .builder {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  outline: 1px solid gray;
+  outline: 1px dotted gray;
   box-sizing: border-box;
+  border-radius: 5px;
 }
 
 .builder__wrap {
@@ -186,7 +187,6 @@ footer.page-footer .footer-copyright {
 
 .builder__other {
   min-width: 30%;
-  outline: 1px solid gray;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -198,7 +198,7 @@ footer.page-footer .footer-copyright {
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-  outline: 1px solid gray;
+  outline: 1px dotted gray;
 }
 
 /* Подменю страна застройщиков */

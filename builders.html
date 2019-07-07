@@ -14,7 +14,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="builder-list">
     <header>
         <nav class="navbar navbar-expand-lg main-header">
             <div class="container">
@@ -58,7 +58,7 @@
                 <div class="row">
                     <div class="col-12 px-0 page-menu__wrap">
                         <nav class="nav py-3 main-nav">
-                            <a class="nav-link black-text" id="search" href="#">Поиск на карте</a>
+                            <a class="nav-link black-text" id="search" href="index.html">Поиск на карте</a>
                             <a class="nav-link active black-text" id="builders" href="builders.html">Застройщики</a>
                             <a class="nav-link black-text" id="rielters" href="rielters.html">Риэлторы</a>
                             <a class="nav-link black-text" id="black-list" href="blacklist.html">Чёрный список</a>
@@ -74,11 +74,13 @@
             </div>
         </section>
         <h1 class="visually-hidden">Список застройщиков по выбранному гериону</h1>
+        <!-- Блок со списком застройщиков -->
         <div class="container builders">
             <div class="row">
                 <div class="col-sm px-0 map__wrap">
                     <section class="builders__block">
 
+                        <!-- Карточка застройщика -->
                         <article class="builder" id="1">
                           <div class="builder__wrap">
                               <div class="builder__img-wrap">
@@ -115,6 +117,7 @@
                           </div>
                         </article>
 
+                        <!-- Карточка застройщика -->
                         <article class="builder" id="2">
                           <div class="builder__wrap">
                               <div class="builder__img-wrap">
@@ -123,7 +126,10 @@
                               <div class="builder__desc">
                                   <h3>
                                     <span>Название компании</span>
-                                    <span class="builder__rating">4.7</span>
+                                    <div class="builder__rating">
+                                      <span class="builder__rating-text">рейтинг:</span>
+                                      <span>4.7</span>
+                                    </div>
                                   </h3>
                                   <ul>
                                       <li>Адрес офиса застройщика 1</li>
@@ -132,17 +138,23 @@
                               </div>
                               <div class="builder__other">
                                   <div class="builder__feedback">
-                                      <span class="mr-2">35</span>
-                                      <span>отзывов</span>
+                                      <a href="#">
+                                        <!-- Положительных/отрицательных отзывов -->
+                                        <span class="mr-2">35</span>
+                                        <span>отзывов</span>
+                                      </a>
                                   </div>
                                   <div class="builder__objects">
+                                    <a href="#">
                                       <span class="mr-2">10</span>
                                       <span>объектов</span>
+                                    </a>
                                   </div>
                               </div>
                           </div>
                         </article>
 
+                        <!-- Карточка застройщика -->
                         <article class="builder" id="3">
                           <div class="builder__wrap">
                               <div class="builder__img-wrap">
@@ -151,7 +163,10 @@
                               <div class="builder__desc">
                                   <h3>
                                     <span>Название компании</span>
-                                    <span class="builder__rating">4.7</span>
+                                    <div class="builder__rating">
+                                      <span class="builder__rating-text">рейтинг:</span>
+                                      <span>4.7</span>
+                                    </div>
                                   </h3>
                                   <ul>
                                       <li>Адрес офиса застройщика 1</li>
@@ -160,18 +175,24 @@
                               </div>
                               <div class="builder__other">
                                   <div class="builder__feedback">
-                                      <span class="mr-2">35</span>
-                                      <span>отзывов</span>
+                                      <a href="#">
+                                        <!-- Положительных/отрицательных отзывов -->
+                                        <span class="mr-2">35</span>
+                                        <span>отзывов</span>
+                                      </a>
                                   </div>
                                   <div class="builder__objects">
+                                    <a href="#">
                                       <span class="mr-2">10</span>
                                       <span>объектов</span>
+                                    </a>
                                   </div>
                               </div>
                           </div>
                         </article>
 
-                        <article class="builder" id="3">
+                        <!-- Карточка застройщика -->
+                        <article class="builder" id="4">
                           <div class="builder__wrap">
                               <div class="builder__img-wrap">
                                   <img src="https://via.placeholder.com/150" alt="Логотип застройщика">
@@ -179,7 +200,10 @@
                               <div class="builder__desc">
                                   <h3>
                                     <span>Название компании</span>
-                                    <span class="builder__rating">4.7</span>
+                                    <div class="builder__rating">
+                                      <span class="builder__rating-text">рейтинг:</span>
+                                      <span>4.7</span>
+                                    </div>
                                   </h3>
                                   <ul>
                                       <li>Адрес офиса застройщика 1</li>
@@ -188,12 +212,17 @@
                               </div>
                               <div class="builder__other">
                                   <div class="builder__feedback">
-                                      <span class="mr-2">35</span>
-                                      <span>отзывов</span>
+                                      <a href="#">
+                                        <!-- Положительных/отрицательных отзывов -->
+                                        <span class="mr-2">35</span>
+                                        <span>отзывов</span>
+                                      </a>
                                   </div>
                                   <div class="builder__objects">
+                                    <a href="#">
                                       <span class="mr-2">10</span>
                                       <span>объектов</span>
+                                    </a>
                                   </div>
                               </div>
                           </div>
@@ -203,44 +232,26 @@
                 </div>
             </div>
         </div>
+        <div class="container pagination">
+          <div class="row w-100">
+              <div class="col-12">
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination pg-blue justify-content-center">
+                      <li class="page-item disabled">
+                        <a class="page-link" tabindex="-1">Предыдущая</a>
+                      </li>
+                      <li class="page-item active"><a class="page-link">1</a></li>
+                      <li class="page-item"><a class="page-link">2</a></li>
+                      <li class="page-item"><a class="page-link">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link">Следующая</a>
+                      </li>
+                    </ul>
+                  </nav>
+              </div>
+          </div>
+        </div>
     </main>
-    <!-- Карточка с описанием выбранного объекта на карте -->
-    <template>
-        <article class="map__card popup py-4 px-4">
-            <div class="popup__wrap d-flex flex-column">
-                <button type="button" class="popup__close">Закрыть</button>
-                <div class="d-flex align-items-end mb-1">
-                    <img class="mr-1" src="https://via.placeholder.com/30" alt="Лого застройщика">
-                    <span>Третий трест</span>
-                </div>
-                <h4 class="h4 mb-3">"Smart Plaza"</h4>
-                <div class="d-flex align-items-end mb-2">
-                    <b class="mr-1">Адрес:</b>
-                    <span>Заводская 15/3</span>
-                </div>
-                <div class="d-flex align-items-end mb-2">
-                    <b class="mr-1">Цена:</b>
-                    <span>5 000 000</span>
-                </div>
-                <div class="d-flex align-items-end mb-2">
-                    <b class="mr-1">Этажей:</b>
-                    <span>30</span>
-                </div>
-                <div class="d-flex align-items-end mb-2">
-                    <b class="mr-1">Тип:</b>
-                    <span>панельный</span>
-                </div>
-                <div class="mb-2">
-                    <b class="d-block">Описание:</b>
-                    <span>Smart Plaza — это новый жилой комплекс интеллект-класса, где технологии будущего уже рядом с вами.</span>
-                </div>
-                <div class="d-flex justify-content-between mt-auto">
-                    <button type="button" class="btn btn-secondary" id="feedback-btn">Отзывы</button>
-                    <button type="button" class="btn btn-success" id="buy-btn">Связаться</button>
-                </div>
-            </div>
-        </article>
-    </template>
     <!-- Футер -->
     <footer class="page-footer font-small">
 
