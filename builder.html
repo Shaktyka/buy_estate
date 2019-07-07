@@ -107,18 +107,18 @@
                         <!-- Фоорма добавления нового отзыва -->
                         <div class="row w-100 add-comment pb-3 border-bottom">
                           <div class="col-12 w-100 pt-3">
-                            <form class="add-comment__form d-flex justify-content-between" action="">
+                            <form class="add-comment__form d-flex justify-content-between" name="new-comment-form" action="" autocomplete="none" method="post">
                               <div class="mx-0 px-0 mr-4">
                                 <img class="user__pic ml-3" src="https://via.placeholder.com/90" alt="Аватар пользователя">
                               </div>
                               <div class="w-100 mx-0 px-0">
                                 <div class="add-comment__user-name d-flex justify-content-between mb-1">
-                                  <b class="mb-0">Николай Колосов</b>
+                                  <input class="user-name" id="user-name" type="text" name="user-name" value="" placeholder="Ваше имя">
                                   <label class="d-flex align-items-center mb-0" for="rating-input">Ваша оценка от 0 до 5:
-                                    <input class="form-control form-control-sm rating-input ml-1" id="rating-input" type="number" placeholder="5" min="0" max="5" step="1">
+                                    <input class="form-control form-control-sm rating-input ml-1" name="user-rating" id="rating-input" type="number" placeholder="5" min="0" max="5" step="1" value="">
                                   </label>
                                 </div>
-                                <textarea class="w-100" name="new-comment" id="new-comment" cols="30" rows="2" placeholder="Введите cвоё сообщение здесь. Для отправки используйте комбинацию Ctrl+Enter."></textarea>
+                                <textarea class="w-100" name="user-comment" id="user-comment" cols="30" rows="2" placeholder="Введите cвоё сообщение здесь. Для отправки используйте комбинацию Ctrl+Enter."></textarea>
                               </div>
                             </form>
                           </div>
