@@ -53,16 +53,22 @@
         </nav>
     </header>
     <main>
-        <section class="container-fluid grey lighten-4">
+        <section class="container-fluid grey lighten-4 page-menu">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 px-0">
+                    <div class="col-12 px-0 page-menu__wrap">
                         <nav class="nav py-3 main-nav">
                             <a class="nav-link black-text" id="search" href="#">Поиск на карте</a>
                             <a class="nav-link active black-text" id="builders" href="builders.html">Застройщики</a>
                             <a class="nav-link black-text" id="rielters" href="rielters.html">Риэлторы</a>
                             <a class="nav-link black-text" id="black-list" href="blacklist.html">Чёрный список</a>
                         </nav>
+                        <!-- Search form -->
+                        <form class="form-inline md-form form-sm active-pink active-pink-2">
+                          <i class="fas fa-search" aria-hidden="true"></i>
+                          <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Поиск"
+    aria-label="Search">
+                        </form>
                     </div>
                 </div>
             </div>
@@ -73,7 +79,43 @@
                 <div class="col-sm px-0 map__wrap">
                     <section class="builders__block">
 
-                        <article class="builder my-3" id="1">
+                        <article class="builder" id="1">
+                          <div class="builder__wrap">
+                              <div class="builder__img-wrap">
+                                  <img src="https://via.placeholder.com/150" alt="Логотип застройщика">
+                              </div>
+                              <div class="builder__desc">
+                                  <h3>
+                                    <span>Название компании</span>
+                                    <div class="builder__rating">
+                                      <span class="builder__rating-text">рейтинг:</span>
+                                      <span>4.7</span>
+                                    </div>
+                                  </h3>
+                                  <ul>
+                                      <li>Адрес офиса застройщика 1</li>
+                                      <li>Адрес офиса застройщика 2</li>
+                                  </ul>
+                              </div>
+                              <div class="builder__other">
+                                  <div class="builder__feedback">
+                                      <a href="#">
+                                        <!-- Положительных/отрицательных отзывов -->
+                                        <span class="mr-2">35</span>
+                                        <span>отзывов</span>
+                                      </a>
+                                  </div>
+                                  <div class="builder__objects">
+                                    <a href="#">
+                                      <span class="mr-2">10</span>
+                                      <span>объектов</span>
+                                    </a>
+                                  </div>
+                              </div>
+                          </div>
+                        </article>
+
+                        <article class="builder" id="2">
                           <div class="builder__wrap">
                               <div class="builder__img-wrap">
                                   <img src="https://via.placeholder.com/150" alt="Логотип застройщика">
@@ -101,7 +143,7 @@
                           </div>
                         </article>
 
-                        <article class="builder my-3" id="2">
+                        <article class="builder" id="3">
                           <div class="builder__wrap">
                               <div class="builder__img-wrap">
                                   <img src="https://via.placeholder.com/150" alt="Логотип застройщика">
@@ -129,7 +171,7 @@
                           </div>
                         </article>
 
-                        <article class="builder my-3" id="3">
+                        <article class="builder" id="3">
                           <div class="builder__wrap">
                               <div class="builder__img-wrap">
                                   <img src="https://via.placeholder.com/150" alt="Логотип застройщика">

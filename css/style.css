@@ -131,7 +131,7 @@
   background-color: #ffffff;
 }
 
-/* FOOTER SOCIALS */
+/* FOOTER */
 
 .page-footer {
   background-color: #a52a2ac9;
@@ -143,8 +143,13 @@ footer.page-footer .footer-copyright {
   background-color: brown;
 }
 
+/* BUILDER (карточка застройщика) */
+
 .builder {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   outline: 1px solid gray;
+  box-sizing: border-box;
 }
 
 .builder__wrap {
@@ -158,11 +163,25 @@ footer.page-footer .footer-copyright {
 .builder__img-wrap {
   min-width: 13%;
   max-width: 13%;
-  margin-right: 2rem;
 }
 
 .builder__desc {
+  padding-top: 1.25rem;
+  padding-right: 2rem;
+  padding-bottom: 1.25rem;
+  padding-left: 2rem;
   flex-grow: 1;
+}
+
+.builder__desc h3 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.builder__rating-text {
+  margin-right: 0.5rem;
+  font-size: 1rem;
 }
 
 .builder__other {
@@ -180,4 +199,16 @@ footer.page-footer .footer-copyright {
   align-items: center;
   flex-grow: 1;
   outline: 1px solid gray;
+}
+
+/* Подменю страна застройщиков */
+
+.page-menu__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.md-form {
+  min-width: 350px;
+  margin: 0;
 }
