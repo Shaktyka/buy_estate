@@ -227,3 +227,9 @@ footer.page-footer .footer-copyright {
 .rating-input {
   width: 100px;
 }
+
+/* Слайдер в карточке описания застройщика */
+
+.slider__listing {
+  font-size: 2rem;
+}
