@@ -217,3 +217,13 @@ footer.page-footer .footer-copyright {
   min-width: 350px;
   margin: 0;
 }
+
+/*ADD COMMENT FORM */
+
+.add-comment__title {
+  font-size: 1rem;
+}
+
+.rating-input {
+  width: 100px;
+}
